@@ -14,6 +14,7 @@ function CreateArea(props) {
             props.Changed(event);
           }}
           placeholder="Title"
+            value={props.values.title}
         />
         <textarea
           name="content"
@@ -22,6 +23,7 @@ function CreateArea(props) {
           }}
           placeholder="Take a note..."
           rows="3"
+          value={props.values.content}
         />
         <button type="submit">Add</button>
       </form>
