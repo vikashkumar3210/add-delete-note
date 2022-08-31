@@ -21,7 +21,7 @@ function App() {
     setItem(function (prevItem) {
       return [...prevItem, Content];
     });
-    seContent({title:"", content:""});
+    setContent({title:"", content:""});
     event.preventDefault();
   }
   function deleteItem(id) {
