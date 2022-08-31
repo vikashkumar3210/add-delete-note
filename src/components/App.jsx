@@ -35,7 +35,7 @@ function App() {
   return (
     <div>
       <Header />
-      <CreateArea Changed={handleChange} Clicked={addItem} />
+    <CreateArea Changed={handleChange} Clicked={addItem} values={Content} />
       {items.map(function (x, index) {
         return (
           <Note
@@ -43,6 +43,7 @@ function App() {
             id={index}
             title={x.title}
             content={x.content}
+             
             dClicked={deleteItem}
           />
         );
